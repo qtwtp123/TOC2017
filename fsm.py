@@ -8,6 +8,8 @@ class TocMachine(GraphMachine):
             **machine_configs
         )
 
+
+        
     def is_going_to_start(self, update):
         text = update.message.text
         return text.lower() == '0'
@@ -93,6 +95,11 @@ class TocMachine(GraphMachine):
         return text.lower() == '20'
 
     def on_enter_start(self, update):
+        update.message.reply_text("I'm going to start")
+        self.go_back(update)
+
+
+    def on_enter_user(self, update):
         update.message.reply_text("作業看累了嗎？歡迎來到輕鬆der心理測驗~這個測驗將會告訴你跟哪一類型的創業家最像哦^^\n（e.g.如下題，若選擇飛天則直接輸入'1'）\n飛天、隱形和讀心術會選哪一項\n1. 飛天\n2. 隱形\n3. 讀心術")
 
     def on_enter_state1(self, update):
