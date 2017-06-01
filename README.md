@@ -12,8 +12,8 @@ TOC project
 python3 app.py
 ```
 3. Telegram!
-Let's talk to my lovely bot. Follow the tips on the bot, and enjoy it.
-![fsm](./img/bot.png)
+Let's talk to my lovely bot. Follow the tips on the bot, and enjoy it.(@F74032015bot)
+![bot](./img/bot.png)
 4. Finite State Machine
 ![fsm](./img/fsm.png)
 
