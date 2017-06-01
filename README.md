@@ -16,6 +16,8 @@ Let's talk to my lovely bot. Follow the tips on the bot, and enjoy it.(@F7403201
 ![bot](./img/bot.png)
 4. Finite State Machine
 ![fsm](./img/fsm.png)
+5. Reference
+NTUEntrepWeek
 
 
 
