@@ -8,11 +8,14 @@ class TocMachine(GraphMachine):
             **machine_configs
         )
 
+    def is_going_to_user(self, update):
+        text = update.message.text
+        return text.lower() == '0'
 
         
     def is_going_to_start(self, update):
         text = update.message.text
-        return text.lower() == '0'
+        return text.lower() == '/start'
 
     def is_going_to_state1(self, update):
         text = update.message.text
@@ -95,7 +98,6 @@ class TocMachine(GraphMachine):
         return text.lower() == '20'
 
     def on_enter_start(self, update):
-        update.message.reply_text("I'm going to start")
         self.go_back(update)
 
 
