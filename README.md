@@ -17,7 +17,7 @@ python3 app.py
 Let's talk to my lovely bot.
 
 4.Finite State Machine
-(./img/fsm.png)
+![fsm](./img/fsm.png)
 
 
 
